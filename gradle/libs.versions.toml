@@ -1,0 +1,22 @@
+[versions]
+spotless = '6.25.0'
+pmd-tool = '7.0.0'
+jacoco = '0.8.12'
+junit = '5.10.2'
+freefairLombokVersion = '8.6'
+lombok = '1.18.32'
+jb-annotation = '24.1.0'
+spring-boot = '2.7.0'
+redis-om-spring= '0.5.1'
+dependency-management = '1.0.11.RELEASE'
+
+[libraries]
+junit-bom = { module = 'org.junit:junit-bom', version.ref = 'junit' }
+jetbrains-annotations = { module = 'org.jetbrains:annotations', version.ref = 'jb-annotation' }
+redis-om-spring = { module = 'com.redis.om:redis-om-spring', version.ref = 'redis-om-spring' }
+
+[plugins]
+spotless = { id = 'com.diffplug.spotless', version.ref = 'spotless' }
+lombok = { id = 'io.freefair.lombok', version.ref = 'freefairLombokVersion' }
+spring-boot = { id = 'org.springframework.boot', version.ref = 'spring-boot' }
+dependency-management = { id = 'io.spring.dependency-management', version.ref = 'dependency-management' }
