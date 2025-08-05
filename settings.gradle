@@ -1,0 +1,4 @@
+rootProject.name = 'redis-om-spring-samples'
+
+include 'hello-world'
+//include 'code-challenges'
